@@ -1,11 +1,11 @@
 substitutions:
-  status_three_way_valve: Válvula de 3 vias
-  status_three_way_valve_2: Válvula de 3 vias 2
+  status_three_way_valve: Valvula de 3 vias
+  status_three_way_valve_2: Valvula de 3 vias 2
   heatpump_climate_dhw: ACS Consigna
   dhw_temp: ACS Temperatura Actual
   dhw_secondary_temp: ACS Temperatura Secundaria
   status_dhw_forced: Forzar ACS
-  dhw_flow_temp_drop: Caída Temperatura Max ACS
+  dhw_flow_temp_drop: Caida Temperatura Max ACS
   status_prohibit_dhw: Prohibicion ACS
   dhw_flow_temp_target: Valor Consigna ACS
   status_dhw: ACS
