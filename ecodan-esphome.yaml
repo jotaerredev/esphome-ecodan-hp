@@ -61,12 +61,13 @@ packages:
     refresh: always
     files: [ 
             confs/base.yaml,        # required
-            confs/esp32s3.yaml,     # confs/esp32.yaml, for regular board
+            confs/esp32.yaml,     # confs/esp32.yaml, for regular board
             confs/zone1.yaml,
             ## enable if you want to use zone 2
             #confs/zone2.yaml,
             ## enable label language file
-            confs/ecodan-labels-en.yaml,
+            #confs/ecodan-labels-en.yaml,
+            confs/ecodan-labels-es.yaml,
             #confs/ecodan-labels-nl.yaml,
             #confs/ecodan-labels-it.yaml,
             confs/server-control.yaml,
