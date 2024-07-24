@@ -57,7 +57,7 @@ substitutions:
   dhw_cop: COP ACS
   dhw_delivered: Entrega ACS
   hp_feed_temp: Temperatura Alimentacion
-  flow_rate: Tsa de Flujo
+  flow_rate: Tasa de Flujo
   heat_source_text: Fuente de Calor
   heatpump: Bomba de Calor
   immersion_heater: Calentador de Inmersion
