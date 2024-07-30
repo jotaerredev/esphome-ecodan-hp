@@ -44,19 +44,19 @@ substitutions:
   heatpump_climate_z2: Consigna Zona 2
   z2_room_temp_target: Valor Consigna Sala Zona 2
   z2_room_temp: Temperatura Sala Zona 1
-  boiler_flow_temp: Temperatura Flujo Caldera
-  boiler_return_temp: Temperatura Retorno Caldera
+  boiler_flow_temp: Temperatura Flujo Tanque
+  boiler_return_temp: Temperatura Retorno Tanque
   status_booster: Calentador Refuerzo
   compressor_frequency: Frecuencia Compresor
   controller_version_text: Version Controlador
   cool_consumed: Consumo Refrigeracion
   cool_cop: COP Refrigeracion
   cool_delivered: Entrega Refrigeracion
-  status_defrost: Descarche
+  status_defrost: Desescarche
   dhw_consumed: Consumo ACS
   dhw_cop: COP ACS
   dhw_delivered: Entrega ACS
-  hp_feed_temp: Temperatura Alimentacion
+  hp_feed_temp: Temperatura Flujo
   flow_rate: Tasa de Flujo
   heat_source_text: Fuente de Calor
   heatpump: Bomba de Calor
@@ -83,6 +83,6 @@ substitutions:
   outside_temp: Temperatura Exterior
   hp_refrigerant_temp: Temperatura Liquido Refrigerante
   hp_refrigerant_condensing_temp: Temperatura Condensacion Refrigerante
-  hp_return_temp: Temperatura Retorno Refrigerante
+  hp_return_temp: Temperatura Retorno
   status_water_pump: Estado Bomba de Agua
   status_water_pump_2: Estado Bomba de Agua 2
