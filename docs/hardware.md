@@ -11,10 +11,10 @@ Tested boards
 | M5Stack Atom Lite S3 (ESP32-S3 variants) | https://docs.m5stack.com/en/core/AtomS3%20Lite | Grove ports used |
 
 Cable
-* Get one of the grove female cable and a ST PAP-05V-S connector. Remove one end of the grove connector and replace it with a ST PAP-05V-S connector. Here's an example:
+* Get one of the grove female cable and a ST PAP-05V-S connector. Remove one end of the grove connector (you can lift the clamp a bit and pull out the wire) and replace it with a ST PAP-05V-S connector. Here's an example:
 ![image](https://github.com/gekkekoe/esphome-ecodan-hp/blob/main/img/m5stack_cn105.jpg?raw=true)
 
-Pin mapping (from left to right)
+Pin mapping (image pin layout: from left to right)
 | grove | cn105 |
 |:---|:---|
 |pin 1 - black (gnd) | pin 4 - black (gnd) |
@@ -23,6 +23,8 @@ Pin mapping (from left to right)
 |pin 4 - yellow (GPIO 1) | pin 1 - yellow (Rx) |
 
 *Note: pin 5 (12v) on the cn105 is not used.*
+
+*Note2: when using 5v from the cn105, **do not** use an external usb power source at the same time*
 
 # where to buy
 atom s3 lite

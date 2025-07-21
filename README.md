@@ -1,20 +1,23 @@
 # ESPHome Ecodan heatpump
-ESPHome implementation of the CN105 protocal. It can operate as standalone or with slave (melcloud/procon) attached. It includes server control mode, realtime power output estimation and realtime daily energy counters. 
+ESPHome implementation of the CN105 protocol. It can operate as standalone or with slave (melcloud/procon) attached. It includes server control mode, realtime power output estimation and realtime daily energy counters. 
 
 The remote thermostat protocol CNRF is supported by https://github.com/gekkekoe/esphome-ecodan-remote-thermostat. It implements a virtual thermostat that can be linked with any temperature sensor.
 
 # available languages
-English (default), Dutch, Italian, French, Spanish. Select the language in `ecodan-esphome.yaml` file. 
+English (default), Dutch, Italian, French, Spanish, German, Finnish. Select the language in `ecodan-esphome.yaml` file. 
 If you want to contribute with a translation: copy the file `ecodan-labels-en.yaml` to `ecodan-labels-xx.yaml`, fill in all the labels and submit a pull request.
 
 # features
 
 | Feature  | description  |
 |----------|--------------|
+| Monitor | Monitor flow, frequency, temperatures and more |
+| Control | operating mode, target temperature, flow temperature, on/standby, vacation and more |
 | Server Control | Restrict/Allow Dhw/Heating/Cooling  |
 | Proxy support | Use a Melcloud WiFi adapter or procon melcobems unit in combination with the esp  |
 | Realtime metrics | `Power output`, `Consumption`, `Production`, `COP` (no external meter required, FTC6+)  |
 | Misc |  `Fan speed`, `Compressor starts`, `Outdoor unit thermistors` |
+| Updates | OTA updates available when using the default recommended hardware |
 
 # links
 * [Recommended hardware](https://github.com/gekkekoe/esphome-ecodan-hp/blob/main/docs/hardware.md)
