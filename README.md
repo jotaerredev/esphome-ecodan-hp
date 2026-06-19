@@ -1,9 +1,14 @@
 # ESPHome Ecodan heatpump
 ESPHome implementation of the CN105 protocol. It can operate as standalone or with slave (Melcloud/Procon) attached. It includes server control mode, realtime power output estimation, and realtime daily energy counters.
 
-The remote thermostat protocol CNRF is supported by [esphome-ecodan-remote-thermostat](https://github.com/gekkekoe/esphome-ecodan-remote-thermostat). It implements a virtual thermostat that can be linked with any temperature sensor. Alternatively the Asgard PCB supports a higher resolution virtual thermostat.
+The remote thermostat protocol CNRF is supported by [esphome-ecodan-remote-thermostat](https://github.com/gekkekoe/esphome-ecodan-remote-thermostat). It implements a virtual thermostat that can be linked with any temperature sensor. Alternatively the [Asgard PCB](https://github.com/gekkekoe/esphome-ecodan-hp/blob/main/asgard/README.md) supports a higher resolution virtual thermostat.
 
-![image](https://github.com/gekkekoe/esphome-ecodan-hp/blob/main/img/ha-integration.png?raw=true)
+### Stand alone [Dashboard](http://ecodan-heatpump.local/dashboard) (Runs locally, no cloud)
+![Stand Alone Mode](img/asgard-standalone.png?v=3) 
+![Stand Alone Mode Settings](img/asgard-standalone-settings.png?v=3) 
+
+### Home Assistant Dashboard
+![HA Dashboard](img/ha-integration.png) 
 
 # Features
 
@@ -20,8 +25,9 @@ The remote thermostat protocol CNRF is supported by [esphome-ecodan-remote-therm
 | Auto Adaptive Control | Automatically adjust flow temps to maintain room temp. (Self learning and fine tuning) [Documentation](https://github.com/gekkekoe/esphome-ecodan-hp/blob/main/docs/auto-adaptive.md) |
 | One wire** | Allow 4 high resolution DS18x20 temperature sensors to be used |
 | Virtual Thermostat** | A software thermostat that controls IN1/IN6. This can replace CNRF, but allows 0.1c temp resolution |
+| Stand alone mode** | Can run without Home Assistant providing basic controls and Auto Adaptive Control |
 
-\* <sup><i>These features are not available in proxy, since we are observing only. Newer FTC7 will report the `Outdoor unit thermistors`.</i></sup>
+\* <sup><i>These features are not available in proxy, since we are observing only. Newer FTC7 will report the `Outdoor unit thermistors`. Additionally service codes are not available on some `SUZ` units</i></sup>
 
 \*\* <sup><i>These features are only available with the Asgard PCB (requires hardware)</i></sup>
 
@@ -42,6 +48,7 @@ Select the language in the `ecodan-esphome.yaml` file.
 | Swedish | sv |
 | Danish | da |
 | Polish | pl |
+| Slovak | sk |
 
 If you want to contribute a translation: copy the file `ecodan-labels-en.yaml` to `ecodan-labels-xx.yaml` (replace `xx` with your language code), fill in all the labels, and submit a pull request.
 
